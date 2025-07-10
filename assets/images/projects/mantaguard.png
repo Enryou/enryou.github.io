@@ -1,0 +1,18 @@
+PLACEHOLDER: Replace with actual MantaGuard project screenshot
+This should show:
+- MantaGuard dashboard interface (Flask web app)
+- AI anomaly detection visualization
+- Network monitoring graphs/charts
+- Real-time security alerts
+- OneClassSVM model performance metrics
+
+Recommended screenshot areas:
+- Main dashboard view showing network statistics
+- AI detection results panel
+- Interactive security monitoring interface
+- Threat classification display
+
+Recommended size: 600x400px
+File format: PNG
+
+Note: Take screenshots when running the Flask application at http://127.0.0.1:5000

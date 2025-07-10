@@ -3,114 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam Kafai - CyberSecurity Student</title>
+    <title>Sam Kafai - CyberSecurity Professional</title>
+    <meta name="description" content="Sam Kafai - Cybersecurity Student and Professional Portfolio">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="js/main.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-brand">Sam Kafai</div>
+        <div class="nav-brand">
+            <span class="logo-text">Sam Kafai</span>
+            <span class="logo-subtitle">CyberSec</span>
+        </div>
         <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="certifications.html" class="nav-link">Certifications</a></li>
+            <li><a href="cv.html" class="nav-link">CV</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
+        <div class="hero-background">
+            <div class="matrix-rain"></div>
+            <div class="cyber-grid"></div>
+        </div>
         <div class="hero-content">
-            <img src="assets/images/profile.jpg" alt="Profile Picture" class="hero-profile-img">
-            <h1>Hello, I'm <span class="highlight">Sam Kafai</span></h1>
-            <h2>CyberSecurity Student</h2>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="typing-text">Hello, I'm Sam Kafai</span>
+                </h1>
+                <h2 class="hero-subtitle">CyberSecurity Professional</h2>
+                <p class="hero-description">
+                    Securing the digital frontier through innovative cybersecurity solutions
+                </p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="cta-button primary">View Projects</a>
+                    <a href="contact.html" class="cta-button secondary">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/profile.jpg" alt="Sam Kafai Profile" class="profile-img">
+                <div class="profile-ring"></div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <div class="school-info">
-                    <p>I'm currently a CyberSecurity Student at</p>
-                    <img src="assets/images/education/LGK.webp" alt="LGK Logo" class="school-logo">
-                    <p>(Lycée Guillaume Kroll) in Esch, Luxembourg.</p>
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="school-info">
+                        <p>Currently pursuing CyberSecurity studies at</p>
+                        <img src="assets/images/education/LGK.webp" alt="LGK Logo" class="school-logo">
+                        <p><strong>Lycée Guillaume Kroll</strong>, Esch, Luxembourg</p>
+                    </div>
+                    <p>Driven cybersecurity enthusiast with a passion for AI-powered security solutions and cryptographic systems. Since beginning my cybersecurity journey in September 2024, I've rapidly developed expertise in network security analysis, machine learning applications in threat detection, and secure communication protocols.</p>
+                    
+                    <p>My hands-on experience includes developing <strong>MantaGuard</strong>, an AI-powered network security platform using machine learning for anomaly detection, and creating a secure peer-to-peer encrypted messaging system with RSA cryptography. I combine theoretical knowledge with practical implementation, leveraging technologies like Python, Flask, Scikit-learn, and FastAPI to build robust security solutions.</p>
+                    
+                    <p>With multiple Microsoft Office Specialist certifications and currently pursuing CompTIA Security+, I'm committed to continuous learning and professional development in cybersecurity. My goal is to contribute to organizational security through innovative threat detection, security automation, and comprehensive risk assessment strategies.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Learning</span>
+                        </div>
+                    </div>
                 </div>
-                <p>This Portfolio was created as part of a course project and will be updated and perfected along with my skills.</p>
-                <div class="cv-download">
-                    <a href="assets/cv/CV_Kafai_S.pdf" download class="cv-button">
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Overview -->
+    <section class="skills-overview">
+        <div class="container">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">🛡️</div>
+                    <h3>Security Analysis</h3>
+                    <p>Threat detection and vulnerability assessment</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">🔒</div>
+                    <h3>Penetration Testing</h3>
+                    <p>Ethical hacking and security testing</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming</h3>
+                    <p>Python, bash scripting, and automation</p>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Network Security</h3>
+                    <p>Firewall configuration and monitoring</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <!-- Add more skills -->
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3>Technologies & Tools</h3>
-                <ul>
-                    <li>Arch Linux</li>
-                    <li>Git</li>
-                    <!-- Add more technologies -->
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <h2>Certifications & Achievements</h2>
-        <div class="cert-grid">
-            <div class="cert-card">
-                <img src="assets/images/certification/microsoft-office-specialist-powerpoint-associate-office-2019.png" alt="PowerPoint Certification" class="cert-img">
-                <h3>Microsoft Office Specialist: PowerPoint Associate (Office 2019)</h3>
-                <p>Microsoft</p>
-                <p class="cert-date">Issued: October 2024</p>
-                <a href="https://www.credly.com/badges/5493172e-5664-4ad3-8a74-c737dd4f765a/public_url" class="cert-link" target="_blank">Verify Certificate</a>
-            </div>
-            <div class="cert-card">
-                <img src="assets/images/certification/microsoft-office-specialist-word-associate-office-2019.png" alt="Word Certification" class="cert-img">
-                <h3>Microsoft Office Specialist: Word Associate (Office 2019)</h3>
-                <p>Microsoft</p>
-                <p class="cert-date">Issued: January 2025</p>
-                <a href="https://www.credly.com/badges/2a4229ac-a6f6-487a-ad40-772157bb1510/public_url" class="cert-link" target="_blank">Verify Certificate</a>
-            </div>
-            <!-- Add more certification cards as needed -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Get in Touch</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:your.email@example.com">sam.kafai@gmail.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <h2 class="section-title">Explore My Work</h2>
+            <div class="links-grid">
+                <a href="projects.html" class="link-card">
+                    <h3>Projects</h3>
+                    <p>View my cybersecurity projects and tools</p>
+                    <span class="link-arrow">→</span>
+                </a>
+                <a href="certifications.html" class="link-card">
+                    <h3>Certifications</h3>
+                    <p>Professional certifications and achievements</p>
+                    <span class="link-arrow">→</span>
+                </a>
+                <a href="cv.html" class="link-card">
+                    <h3>Resume</h3>
+                    <p>Professional experience and education</p>
+                    <span class="link-arrow">→</span>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="social-links">
-            <a href="https://github.com/Enryou" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/sam-kafai-1570b9344" target="_blank">LinkedIn</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Sam Kafai</h3>
+                    <p>CyberSecurity Professional</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="certifications.html">Certifications</a></li>
+                            <li><a href="cv.html">CV</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="https://github.com/Enryou" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/sam-kafai-1570b9344" target="_blank">LinkedIn</a></li>
+                            <li><a href="mailto:sam.kafai@gmail.com">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sam Kafai. All rights reserved.</p>
+            </div>
         </div>
-        <p>&copy; 2025 Sam Kafai. All rights reserved.</p>
     </footer>
 </body>
 </html>

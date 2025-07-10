@@ -1,0 +1,18 @@
+PLACEHOLDER: Replace with actual P2P Encrypted Messaging System screenshot
+This should show:
+- Terminal/command line interface of the messaging system
+- RSA key generation process
+- Encrypted message exchange
+- User authentication interface
+- Database structure or API endpoints
+
+Recommended screenshot areas:
+- Client.py running with user interaction
+- Server API responses (FastAPI/Uvicorn)
+- Encrypted message display
+- Key management interface
+
+Recommended size: 600x400px
+File format: PNG
+
+Note: Capture screenshots while running both client.py and the FastAPI server

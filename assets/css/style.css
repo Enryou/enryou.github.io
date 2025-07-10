@@ -548,7 +548,7 @@ section .container {
 }
 
 .interests .icon-box:hover {
-  background: #042b56eb;
+  background: #042e5f;
 }
 
 /*--------------------------------------------------------------
@@ -1320,4 +1320,142 @@ section .container {
     right: 0;
     transform: translateX(-50%);
   }
+}
+
+/* Enhanced Header Styles with Blur Background */
+#header .container {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced Social Links */
+#header .contact-section-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#header .social-links {
+  justify-content: center;
+  gap: 15px;
+}
+
+#header .social-links a {
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+#header .social-links a:hover {
+  background: #12d640;
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px rgba(18, 214, 64, 0.4);
+}
+
+/* Blurred backgrounds for sections */
+.about-me .container,
+.interests .container,
+.services .container,
+.portfolio .container,
+.diplomas .container {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Enhanced text readability */
+.section-title h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-title, .hero-subtitle, .hero-description {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Standardized Card Color Scheme */
+/* About section stat items */
+.stat-item {
+  background: #09203a !important;
+  border: 1px solid rgba(18, 214, 64, 0.3) !important;
+  color: #fff !important;
+}
+
+.stat-item:hover {
+  background: #042e5f !important;
+}
+
+.stat-item .stat-number {
+  color: #12d640 !important;
+}
+
+/* Skills section cards */
+.skills .icon-box,
+.services .icon-box {
+  background: #09203a !important;
+}
+
+.skills .icon-box:hover,
+.services .icon-box:hover {
+  background: #042e5f !important;
+}
+
+/* Portfolio/Projects cards */
+.project-card,
+.portfolio-item .portfolio-wrap {
+  background: #09203a !important;
+}
+
+.project-card:hover,
+.portfolio-item:hover .portfolio-wrap {
+  background: #042e5f !important;
+}
+
+/* Certification cards */
+.cert-card,
+.diplomas-item .diplomas-wrap {
+  background: #09203a !important;
+}
+
+.cert-card:hover,
+.diplomas-item:hover .diplomas-wrap {
+  background: #042e5f !important;
+}
+
+/* CV section cards */
+.cv-content,
+.cv .icon-box {
+  background: #09203a !important;
+}
+
+.cv-content:hover,
+.cv .icon-box:hover {
+  background: #042e5f !important;
+}
+
+/* Override any inline styles that were set */
+[style*="background:rgba(42, 42, 42"] {
+  background: #09203a !important;
+}
+
+/* Skills section logo styling */
+.skills .icon-box img {
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.skills .icon-box img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 2px 10px rgba(18, 214, 64, 0.3);
 }

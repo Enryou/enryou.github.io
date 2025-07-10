@@ -304,29 +304,30 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-// Matrix rain effect enhancement
+// Binary rain effect enhancement
 function initMatrixRain() {
     const matrixElements = document.querySelectorAll('.matrix-rain');
     
     matrixElements.forEach(element => {
-        // Create matrix characters
-        const chars = '01¢¤¦¨ª«­¯±³µ·¹»½¿ÁÄÆÈÊËÌÍÎÏÒÕØÛŞßàáâäæèéêëìíïòó';
+        // Create binary characters only
+        const chars = '01';
         const matrixChars = chars.split('');
         
         // Create falling characters
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 50; i++) {
             const span = document.createElement('span');
             span.textContent = matrixChars[Math.floor(Math.random() * matrixChars.length)];
             span.style.cssText = `
                 position: absolute;
                 left: ${Math.random() * 100}%;
                 top: -20px;
-                color: var(--cyber-green);
+                color: rgba(100, 255, 100, ${Math.random() * 0.5 + 0.3});
                 font-family: var(--font-mono);
-                font-size: ${Math.random() * 16 + 12}px;
-                animation: matrix-fall ${Math.random() * 3 + 2}s linear infinite;
-                animation-delay: ${Math.random() * 2}s;
-                opacity: ${Math.random() * 0.7 + 0.3};
+                font-size: ${Math.random() * 16 + 10}px;
+                animation: matrix-fall ${Math.random() * 4 + 3}s linear infinite;
+                animation-delay: ${Math.random() * 3}s;
+                pointer-events: none;
+                user-select: none;
             `;
             element.appendChild(span);
         }
@@ -336,10 +337,10 @@ function initMatrixRain() {
     const style = document.createElement('style');
     style.textContent = `
         @keyframes matrix-fall {
-            0% { transform: translateY(-20px); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(100vh); opacity: 0; }
+            0% { transform: translateY(-30px); opacity: 0; }
+            5% { opacity: 1; }
+            95% { opacity: 1; }
+            100% { transform: translateY(calc(100vh + 50px)); opacity: 0; }
         }
     `;
     document.head.appendChild(style);
@@ -381,16 +382,16 @@ function initThemeEffects() {
     });
 }
 
-// Particle effect function
+// Simple particle effect function
 function createParticleEffect(x, y) {
-    const colors = ['var(--cyber-blue)', 'var(--cyber-green)', 'var(--cyber-purple)'];
+    const colors = ['#4a90e2', '#50e3c2', '#7ed321'];
     
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 6; i++) {
         const particle = document.createElement('div');
         particle.style.cssText = `
             position: fixed;
-            width: 4px;
-            height: 4px;
+            width: 3px;
+            height: 3px;
             background: ${colors[Math.floor(Math.random() * colors.length)]};
             border-radius: 50%;
             pointer-events: none;
@@ -401,9 +402,9 @@ function createParticleEffect(x, y) {
         
         document.body.appendChild(particle);
         
-        const angle = (Math.PI * 2 * i) / 8;
-        const velocity = 100;
-        const lifetime = 1000;
+        const angle = (Math.PI * 2 * i) / 6;
+        const velocity = 80;
+        const lifetime = 800;
         
         particle.animate([
             { transform: 'translate(0, 0) scale(1)', opacity: 1 },

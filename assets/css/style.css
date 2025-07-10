@@ -1333,31 +1333,6 @@ section .container {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Contact section positioning and styling */
-.contact-section-header {
-  margin-top: 40px !important;
-  text-align: left;
-}
-
-.contact-section-header h3 {
-  margin-bottom: 8px !important;
-}
-
-#header .social-links {
-  margin-top: 8px !important;
-  justify-content: flex-start !important;
-  display: flex;
-}
-
-/* Compact header container for contact area */
-@media (min-width: 993px) {
-  #header .container {
-    width: fit-content;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 
 /* Enhanced Social Links */
 #header .contact-section-header {

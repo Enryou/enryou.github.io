@@ -79,11 +79,12 @@
       constructor() {
         this.x = Math.random() * width;
         this.y = Math.random() * height;
-        this.vx = (Math.random() - 0.5) * 0.5;
-        this.vy = (Math.random() - 0.5) * 0.5;
-        this.radius = Math.random() * 2 + 1;
+        this.vx = (Math.random() - 0.5) * 0.6;
+        this.vy = (Math.random() - 0.5) * 0.6;
+        this.radius = Math.random() * 2.5 + 1.5;
         this.originalVx = this.vx;
         this.originalVy = this.vy;
+        this.glowIntensity = Math.random() * 0.5 + 0.5;
       }
 
       update() {
@@ -127,7 +128,19 @@
       draw() {
         const theme = document.documentElement.getAttribute('data-theme');
         const colors = getThemeColors(theme);
-        
+
+        // Draw glow effect
+        const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.radius * 2);
+        gradient.addColorStop(0, colors.node);
+        gradient.addColorStop(0.5, colors.node.replace(/[\d.]+\)$/g, (this.glowIntensity * 0.3) + ')'));
+        gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius * 2, 0, Math.PI * 2);
+        ctx.fillStyle = gradient;
+        ctx.fill();
+
+        // Draw core
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         ctx.fillStyle = colors.node;
@@ -139,15 +152,15 @@
     function getThemeColors(theme) {
       if (theme === 'light') {
         return {
-          node: 'rgba(5, 150, 105, 0.8)',
-          connection: 'rgba(5, 150, 105, 0.25)',
-          activeConnection: 'rgba(5, 150, 105, 0.6)'
+          node: 'rgba(0, 153, 204, 0.85)',
+          connection: 'rgba(0, 153, 204, 0.28)',
+          activeConnection: 'rgba(0, 153, 204, 0.65)'
         };
       } else {
         return {
-          node: 'rgba(18, 214, 64, 0.6)',
-          connection: 'rgba(18, 214, 64, 0.15)',
-          activeConnection: 'rgba(18, 214, 64, 0.4)'
+          node: 'rgba(0, 217, 255, 0.7)',
+          connection: 'rgba(0, 217, 255, 0.18)',
+          activeConnection: 'rgba(0, 217, 255, 0.5)'
         };
       }
     }
@@ -191,7 +204,7 @@
     // Animation loop
     function animate() {
       const theme = document.documentElement.getAttribute('data-theme');
-      const bgColor = theme === 'light' ? '#f8fafc' : '#010e1b';
+      const bgColor = theme === 'light' ? '#f7f9fc' : '#050811';
       
       ctx.fillStyle = bgColor;
       ctx.fillRect(0, 0, width, height);

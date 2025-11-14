@@ -186,7 +186,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: var(--text-primary);
   position: relative;
-  background: var(--bg-secondary);
+  background: transparent;
   overflow-x: hidden;
 }
 
@@ -1770,7 +1770,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Enhanced Header Section */
 #header {
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+  background: transparent;
 }
 
 #header .container {

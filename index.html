@@ -6,180 +6,206 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Sam KAFAI - CyberSecurity Professional</title>
-  <meta content="Sam Kafai - Cybersecurity Student and Professional Portfolio" name="description">
+  <title>Sam Kafai — Cybersecurity Professional</title>
+  <meta content="Sam Kafai - Cybersecurity Professional Portfolio" name="description">
   <meta content="cybersecurity, pentesting, AI security, network security, Sam Kafai" name="keywords">
 
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Icons -->
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
   <!-- Neural Network Background -->
-  <canvas id="neural-network-bg" class="neural-network-background"></canvas>
+  <canvas id="neural-network-bg" class="neural-bg"></canvas>
 
-  <!-- Theme Toggle Button (Fixed Top Left) -->
+  <!-- Theme Toggle -->
   <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
     <i class="bx bx-sun theme-icon light-icon"></i>
     <i class="bx bx-moon theme-icon dark-icon"></i>
   </button>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
-    <div class="container">
-      <h1><a href="index.html">Sam Kafai</a></h1>
-      <h2>I'm <span class="typing"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-          <li><a href="#portfolio"> <span>Projects</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="#cv"> <span>CV</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
-      <div class="contact-section-header">
-        <h3 style="color: var(--accent-primary); margin-bottom: 15px; font-size: 1.2rem;">Contact</h3>
-      </div>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/sam-kafai-1570b9344" target="_blank" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/Enryou" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:sam.kafai@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-      </div>
-
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">SK<span>.</span></a>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-  </header><!-- End Header -->
+  </nav>
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Sam Kafai</h1>
+      <p class="hero-title">Cybersecurity Professional</p>
+      <p class="hero-description">
+        Building secure systems through AI-powered threat detection, 
+        cryptographic solutions, and network security analysis.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/images/profile.jpg" class="img-fluid" alt="">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>Driven cybersecurity enthusiast with a passion for AI-powered security solutions and cryptographic systems. Since beginning my cybersecurity journey in September 2024, I've rapidly developed expertise in network security analysis, machine learning applications in threat detection, and secure communication protocols.</p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> <span id="current-age">28</span> years old</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Country:</strong> Luxembourg</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> sam.kafai@gmail.com</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div class="hero-social">
+        <a href="https://www.linkedin.com/in/sam-kafai-1570b9344" target="_blank" aria-label="LinkedIn">
+          <i class="bx bxl-linkedin"></i>
+        </a>
+        <a href="https://github.com/Enryou" target="_blank" aria-label="GitHub">
+          <i class="bx bxl-github"></i>
+        </a>
+        <a href="mailto:sam.kafai@gmail.com" aria-label="Email">
+          <i class="bx bx-envelope"></i>
+        </a>
       </div>
+    </div>
+  </header>
 
-    </div><!-- End About Me -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-shield-line" style="color: #4a90e2;"></i>
-            <h3>AI-Powered Security</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-computer-line" style="color: #50e3c2;"></i>
-            <h3>Network Security Analysis</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-lock-line" style="color: #7ed321;"></i>
-            <h3>Cryptography & Encryption</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-terminal-box-line" style="color: #f39c12;"></i>
-            <h3>Machine Learning Security</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-bug-line" style="color: #e74c3c;"></i>
-            <h3>Penetration Testing</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-code-line" style="color: #9b59b6;"></i>
-            <h3>Python Development</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-database-line" style="color: #17a2b8;"></i>
-            <h3>Threat Intelligence</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-chart-line" style="color: #FF1493;"></i>
-            <h3>Security Automation</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-  </section><!-- End About Section -->
-
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="services">
+  <!-- About Section -->
+  <section class="section" id="about">
     <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
+      <div class="section-header">
+        <span class="section-tag">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="assets/images/profile.jpg" alt="Sam Kafai">
+          <div class="about-image-border"></div>
+        </div>
+        <div class="about-content">
+          <p class="about-text">
+            Driven cybersecurity enthusiast with a passion for AI-powered security solutions 
+            and cryptographic systems. Since beginning my cybersecurity journey in September 2024, 
+            I've rapidly developed expertise in network security analysis, machine learning 
+            applications in threat detection, and secure communication protocols.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-label">Location</span>
+              <span class="detail-value">Luxembourg</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Focus</span>
+              <span class="detail-value">AI Security & Cryptography</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Status</span>
+              <span class="detail-value">Open to opportunities</span>
+            </div>
+          </div>
+          <a href="assets/cv/CV_Kafai_S.pdf" target="_blank" class="btn btn-outline">
+            <i class="bx bx-download"></i> Download CV
+          </a>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
+      <!-- Interests -->
+      <div class="interests-section">
+        <h3 class="subsection-title">Areas of Interest</h3>
+        <div class="interests-grid">
+          <div class="interest-card">
+            <i class="ri-shield-line"></i>
+            <span>AI-Powered Security</span>
+          </div>
+          <div class="interest-card">
+            <i class="ri-computer-line"></i>
+            <span>Network Analysis</span>
+          </div>
+          <div class="interest-card">
+            <i class="ri-lock-line"></i>
+            <span>Cryptography</span>
+          </div>
+          <div class="interest-card">
+            <i class="ri-terminal-box-line"></i>
+            <span>ML Security</span>
+          </div>
+          <div class="interest-card">
+            <i class="ri-bug-line"></i>
+            <span>Penetration Testing</span>
+          </div>
+          <div class="interest-card">
+            <i class="ri-code-s-slash-line"></i>
+            <span>Python Development</span>
+          </div>
+          <div class="interest-card">
+            <i class="ri-spy-line"></i>
+            <span>Threat Intelligence</span>
+          </div>
+          <div class="interest-card">
+            <i class="ri-robot-line"></i>
+            <span>Security Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="col-md-6 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100"
-            style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-            <img src="assets/images/education/LGK.webp" class="img-fluid" alt="">
-            <p style="text-align:left;color:#fff;padding: 5px 10px;"><em>CyberSecurity Studies</em></p>
-            <h5 style="text-align:left;padding: 0px 10px;">September 2024 - Present</h5>
-            <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-            <ul style="text-align:left;color:#fff;">
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02</span>
+        <h2 class="section-title">Experience & Education</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">April 2025 — Present</span>
+            <h3 class="timeline-title">AI Security Developer</h3>
+            <p class="timeline-company">MantaGuard Development Team</p>
+            <ul class="timeline-list">
+              <li>Developed AI-powered network security analysis platform using machine learning for anomaly detection</li>
+              <li>Implemented real-time monitoring capabilities with Zeek and Python</li>
+              <li>Created interactive security dashboard with Flask and data visualization tools</li>
+              <li>Collaborated on OneClassSVM model training for threat classification</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">October 2024 — Present</span>
+            <h3 class="timeline-title">Independent Security Developer</h3>
+            <p class="timeline-company">Personal Projects</p>
+            <ul class="timeline-list">
+              <li>Created secure peer-to-peer encrypted messaging system with RSA cryptography</li>
+              <li>Developed FastAPI-based secure communication protocols</li>
+              <li>Implemented end-to-end encryption with secure key management</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker education"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">September 2024 — Present</span>
+            <h3 class="timeline-title">CyberSecurity Studies</h3>
+            <p class="timeline-company">LGK Luxembourg</p>
+            <ul class="timeline-list">
               <li>Network Security Analysis</li>
               <li>Python Programming</li>
               <li>AI & Machine Learning Security</li>
@@ -189,330 +215,207 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="diplomas">
-      <div class="container">
-        <div class="section-title">
-          <h2>Certifications</h2>
-        </div>
-
-        <div class="container">
-          <div class="section-title">
-          </div>
-
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="diplomas-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-microsoft">Microsoft</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row diplomas-container" style="position: relative; height: 437.75px;">
-
-            <div class="col-lg-4 col-md-6 diplomas-item filter-microsoft" style="position: absolute; left: 0px; top: 0px;">
-              <div class="diplomas-wrap">
-                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8a229e77-815d-470b-ad8d-d70559b0e0c9" data-share-badge-host="https://www.credly.com"></div>
-                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                <div class="diplomas-info">
-                  <h4>Microsoft Office Specialist: Microsoft Excel Expert (Office 2019)</h4>
-                  <div class="diplomas-links">
-                    <a href="https://www.credly.com/badges/8a229e77-815d-470b-ad8d-d70559b0e0c9" target="_blank" title="Certificate"><i
-                        class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 diplomas-item filter-microsoft" style="position: absolute; left: 370px; top: 0px;">
-              <div class="diplomas-wrap">
-                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a958ee1a-9985-481d-b5de-557fb0ea2b6b" data-share-badge-host="https://www.credly.com"></div>
-                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                <div class="diplomas-info">
-                  <h4>Microsoft Office Specialist: Expert (Office 2019)</h4>
-                  <div class="diplomas-links">
-                    <a href="https://www.credly.com/badges/a958ee1a-9985-481d-b5de-557fb0ea2b6b" target="_blank" title="Certificate"><i
-                        class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 diplomas-item filter-microsoft"
-              style="position: absolute; left: 740px; top: 0px;">
-              <div class="diplomas-wrap">
-                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="dd6ea24f-f276-4f9d-9bae-5a2e666eb025" data-share-badge-host="https://www.credly.com"></div>
-                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                <div class="diplomas-info">
-                  <h4>Microsoft Office Specialist: Microsoft Word Expert (Office 2019)</h4>
-                  <div class="diplomas-links">
-                    <a href="https://www.credly.com/badges/dd6ea24f-f276-4f9d-9bae-5a2e666eb025" target="_blank" title="Certificate"><i
-                        class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 diplomas-item filter-microsoft"
-              style="position: absolute; left: 0px; top: 218.875px;">
-              <div class="diplomas-wrap">
-                <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="5493172e-5664-4ad3-8a74-c737dd4f765a" data-share-badge-host="https://www.credly.com"></div>
-                <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                <div class="diplomas-info">
-                  <h4>Microsoft Office Specialist: PowerPoint Associate (Office 2019)</h4>
-                  <div class="diplomas-links">
-                    <a href="https://www.credly.com/badges/5493172e-5664-4ad3-8a74-c737dd4f765a" target="_blank" title="Certificate"><i
-                        class="bx bx-link"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- End Education Section -->
-
-  <!-- Start Experience Section -->
-  <section id="experience" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <h4 style="text-align:left;"><a style="color: var(--accent-primary)">MantaGuard Development Team</a><br> </h4>
-            <h5 style="text-align:left;">April 2025 – Present</h5>
-            <p style="text-align:left;color:#fff"><em>AI Security Developer</em></p>
-            <ul style="text-align:left;">
-              <li>Developed AI-powered network security analysis platform using machine learning for anomaly detection</li>
-              <li>Implemented real-time monitoring capabilities with Zeek and Python</li>
-              <li>Created interactive security dashboard with Flask and data visualization tools</li>
-              <li>Collaborated on OneClassSVM model training for threat classification</li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-lg-12" data-aos="fade-up">
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a style="color: var(--accent-primary)">Personal Security Projects</a><br> </h4>
-                <h5 style="text-align:left;">October 2024 - Present</h5>
-                <p style="text-align:left;color:#fff"><em>Independent Development</em></p>
-                <ul style="text-align:left;">
-                  <li>Created secure peer-to-peer encrypted messaging system with RSA cryptography</li>
-                  <li>Developed FastAPI-based secure communication protocols</li>
-                  <li>Implemented end-to-end encryption with secure key management</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Experience Section -->
-
-  <!-- Start Project Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-ai">AI Security</li>
-            <li data-filter=".filter-crypto">Cryptography</li>
-            <li data-filter=".filter-network">Network Security</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-ai">
-          <div style="text-align: center;">
-            <h4>MantaGuard</h4>
-          </div>
-          <div class="portfolio-wrap">
-            <img src="assets/images/projects/mantaguard.png" class="img-fluid" alt="MantaGuard AI Security">
-            <div class="portfolio-info">
-              <h4>MantaGuard</h4>
-              <p>AI-powered network security analysis and anomaly detection platform</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/PYCOD1-Group2/MantaGuard" target="_blank" title="View on GitHub">
-                  <i class="bx bx-link"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-crypto">
-          <div style="text-align: center;">
-            <h4>P2P Encrypted Messaging</h4>
-          </div>
-          <div class="portfolio-wrap">
-            <img src="assets/images/projects/p2p-messaging.png" class="img-fluid" alt="P2P Encrypted Messaging">
-            <div class="portfolio-info">
-              <h4>Peer-to-Peer Encrypted Messaging System</h4>
-              <p>Secure messaging with RSA encryption and FastAPI backend</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/Enryou/BCYB_Project" target="_blank" title="View on GitHub">
-                  <i class="bx bx-info-circle"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- End Project Section -->
-
-  <!-- Start Skills Section -->
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <h4 style="text-align:left;color: var(--accent-primary)">Programming Languages & Frameworks</h4>
-            <p style="text-align:left;">
-              <img src="assets/images/Logos/Python.svg.png" alt="Python" height="50" style="width:auto; max-width:150px; margin:5px; object-fit:contain;">
-              <img src="assets/images/Logos/icons-flask-x500w.png" alt="Flask" height="50" style="width:auto; max-width:120px; margin:5px; object-fit:contain;">
-              <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI" height="50" style="width:auto; max-width:150px; margin:5px; object-fit:contain;">
-            </p>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100">
-            <h4 style="text-align:left;color: var(--accent-primary)">Security Tools & Technologies</h4>
-            <p style="text-align:left;">
-              <img src="assets/images/Logos/Zeek-Featured.png" alt="Zeek" height="50" style="width:auto; max-width:120px; margin:5px; border-radius:5px; object-fit:contain;">
-              <img src="assets/images/Logos/scikit-learn.png" alt="Scikit-learn" height="50" style="width:auto; max-width:120px; margin:5px; border-radius:5px; object-fit:contain;">
-              <img src="assets/images/Logos/RSA.png" alt="RSA Cryptography" height="50" style="width:auto; max-width:120px; margin:5px; border-radius:5px; object-fit:contain;">
-              <img src="assets/images/Logos/OCSVM.png" alt="OneClassSVM" height="50" style="width:auto; max-width:120px; margin:5px; border-radius:5px; object-fit:contain;">
-              <img src="assets/images/Logos/sqlite.png" alt="SQLite" height="50" style="width:auto; max-width:120px; margin:5px; border-radius:5px; object-fit:contain;">
-              <img src="assets/images/Logos/uvicorn.png" alt="Uvicorn" height="50" style="width:auto; max-width:120px; margin:5px; border-radius:5px; object-fit:contain;">
-            </p>
-          </div>
-
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="lefade-up" data-aos-delay="100">
-            <h4 style="text-align:left;color: var(--accent-primary)">Languages</h4>
-            <p style="text-align:left;">
-              <span style="display:inline-block; text-align:center; margin-right:15px; margin-bottom:15px;">
-                <img src="http://purecatamphetamine.github.io/country-flag-icons/3x2/LU.svg" alt="Luxembourg Flag"
-                  style="width:80px; height:auto; border:2px solid black; border-radius:5px; display:block;">
-                <span style="color:#fff; font-size:14px; margin-top:5px; display:block;">Luxembourgish</span>
-              </span>
-              <span style="display:inline-block; text-align:center; margin-right:15px; margin-bottom:15px;">
-                <img src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" alt="US Flag"
-                  style="width:80px; height:auto; border:2px solid black; border-radius:5px; display:block;">
-                <span style="color:#fff; font-size:14px; margin-top:5px; display:block;">English</span>
-              </span>
-              <span style="display:inline-block; text-align:center; margin-right:15px; margin-bottom:15px;">
-                <img src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg" alt="France Flag"
-                  style="width:80px; height:auto; border:2px solid black; border-radius:5px; display:block;">
-                <span style="color:#fff; font-size:14px; margin-top:5px; display:block;">French</span>
-              </span>
-              <span style="display:inline-block; text-align:center; margin-right:15px; margin-bottom:15px;">
-                <img src="http://purecatamphetamine.github.io/country-flag-icons/3x2/DE.svg" alt="Germany Flag"
-                  style="width:80px; height:auto; border:2px solid black; border-radius:5px; display:block;">
-                <span style="color:#fff; font-size:14px; margin-top:5px; display:block;">German</span>
-              </span>
-              <span style="display:inline-block; text-align:center; margin-right:15px; margin-bottom:15px;">
-                <img src="http://purecatamphetamine.github.io/country-flag-icons/3x2/IR.svg" alt="Iran Flag (Farsi)"
-                  style="width:80px; height:auto; border:2px solid black; border-radius:5px; display:block;">
-                <span style="color:#fff; font-size:14px; margin-top:5px; display:block;">Farsi</span>
-              </span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Skills Section -->
-
-  <!-- ======= Start CV Section ======= -->
-  <section id="cv" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>CV</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="assets/cv/CV_Kafai_S.pdf" target="_blank">
-            <div class="icon"><i class="icofont-page"></i></div>
+      <!-- Certifications -->
+      <div class="certifications-section">
+        <h3 class="subsection-title">Certifications</h3>
+        <div class="cert-grid">
+          <a href="https://www.credly.com/badges/8a229e77-815d-470b-ad8d-d70559b0e0c9" target="_blank" class="cert-card">
+            <i class="bx bxl-microsoft"></i>
+            <span>Excel Expert</span>
+            <small>Office 2019</small>
           </a>
-          <h4 class="title"><a style="color: var(--accent-primary);" href="assets/cv/CV_Kafai_S.pdf" target="_blank">Curriculum Vitae</a></h4>
+          <a href="https://www.credly.com/badges/a958ee1a-9985-481d-b5de-557fb0ea2b6b" target="_blank" class="cert-card">
+            <i class="bx bxl-microsoft"></i>
+            <span>MOS Expert</span>
+            <small>Office 2019</small>
+          </a>
+          <a href="https://www.credly.com/badges/dd6ea24f-f276-4f9d-9bae-5a2e666eb025" target="_blank" class="cert-card">
+            <i class="bx bxl-microsoft"></i>
+            <span>Word Expert</span>
+            <small>Office 2019</small>
+          </a>
+          <a href="https://www.credly.com/badges/5493172e-5664-4ad3-8a74-c737dd4f765a" target="_blank" class="cert-card">
+            <i class="bx bxl-microsoft"></i>
+            <span>PowerPoint</span>
+            <small>Office 2019</small>
+          </a>
         </div>
       </div>
     </div>
   </section>
-  <!-- ======= End CV Section ======= -->
 
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
 
-  <!-- Credits Section -->
-  <div class="credits">
-    Design inspired by <a href="https://github.com/Cyb3rTyr" target="_blank">Cyb3rTyr</a> portfolio
-  </div>
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-image">
+            <img src="assets/images/projects/mantaguard.png" alt="MantaGuard">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">AI</span>
+              <span class="tag">Python</span>
+              <span class="tag">Machine Learning</span>
+            </div>
+            <h3 class="project-title">MantaGuard</h3>
+            <p class="project-description">
+              AI-powered network security analysis platform that uses machine learning 
+              for real-time anomaly detection and threat classification. Features interactive 
+              dashboards and integrates with Zeek for network monitoring.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/PYCOD1-Group2/MantaGuard" target="_blank" class="project-link">
+                <i class="bx bxl-github"></i> View Source
+              </a>
+            </div>
+          </div>
+        </article>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    new Typed('.typing', {
-      strings: ["a CyberSecurity Professional", "an AI Security Developer", "a Network Security Analyst", "a Penetration Tester"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
-  </script>
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/images/projects/p2p-messaging.png" alt="P2P Encrypted Messaging">
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Cryptography</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">RSA</span>
+            </div>
+            <h3 class="project-title">P2P Encrypted Messaging</h3>
+            <p class="project-description">
+              Secure peer-to-peer messaging system with RSA encryption and FastAPI backend. 
+              Implements end-to-end encryption with secure key management for private communications.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Enryou/BCYB_Project" target="_blank" class="project-link">
+                <i class="bx bxl-github"></i> View Source
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-  <!-- Template Main JS File -->
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04</span>
+        <h2 class="section-title">Skills & Tools</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">Languages & Frameworks</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="assets/images/Logos/Python.svg.png" alt="Python">
+              <span>Python</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/Logos/icons-flask-x500w.png" alt="Flask">
+              <span>Flask</span>
+            </div>
+            <div class="skill-item">
+              <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI">
+              <span>FastAPI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Security Tools</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <img src="assets/images/Logos/Zeek-Featured.png" alt="Zeek">
+              <span>Zeek</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/Logos/scikit-learn.png" alt="Scikit-learn">
+              <span>Scikit-learn</span>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/Logos/RSA.png" alt="RSA">
+              <span>RSA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title">Languages Spoken</h3>
+          <div class="language-items">
+            <div class="language-item">
+              <img src="https://purecatamphetamine.github.io/country-flag-icons/3x2/LU.svg" alt="Luxembourg">
+              <span>Luxembourgish</span>
+            </div>
+            <div class="language-item">
+              <img src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" alt="English">
+              <span>English</span>
+            </div>
+            <div class="language-item">
+              <img src="https://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg" alt="French">
+              <span>French</span>
+            </div>
+            <div class="language-item">
+              <img src="https://purecatamphetamine.github.io/country-flag-icons/3x2/DE.svg" alt="German">
+              <span>German</span>
+            </div>
+            <div class="language-item">
+              <img src="https://purecatamphetamine.github.io/country-flag-icons/3x2/IR.svg" alt="Farsi">
+              <span>Farsi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05</span>
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+
+      <div class="contact-content">
+        <p class="contact-text">
+          I'm currently open to new opportunities and collaborations. 
+          Whether you have a project in mind or just want to connect, feel free to reach out.
+        </p>
+        <a href="mailto:sam.kafai@gmail.com" class="btn btn-primary btn-large">
+          <i class="bx bx-envelope"></i> Say Hello
+        </a>
+        <div class="contact-social">
+          <a href="https://www.linkedin.com/in/sam-kafai-1570b9344" target="_blank">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="https://github.com/Enryou" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & Built by Sam Kafai</p>
+      <p class="footer-year"></p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Age calculation script -->
-  <script type="text/javascript">
-    function calculateAge() {
-      const birthDate = new Date('1996-11-15');
-      const today = new Date();
-      let age = today.getFullYear() - birthDate.getFullYear();
-      const monthDiff = today.getMonth() - birthDate.getMonth();
-      
-      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-      }
-      
-      const ageElement = document.getElementById('current-age');
-      if (ageElement) {
-        ageElement.textContent = age;
-      }
-    }
-    
-    // Calculate age when page loads
-    document.addEventListener('DOMContentLoaded', calculateAge);
-  </script>
-
 </body>
 
 </html>
